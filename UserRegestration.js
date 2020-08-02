@@ -14,6 +14,10 @@ var mobileArray = ["91 8551973494", "8551973494", "91 855197", "918551973494"];
 var mobilePattern = /^[1-9]+[0-9]+[\ ]+[1-9]+[0-9]{9}$/;
 validate(mobilePattern, mobileArray);
 
+var passwordArray = ["sudhanshu", "sudh"];
+var passwordPattern = /[0-9A-Za-z]{8,}$/;
+validate(passwordPattern, passwordArray);
+
 function validate(pattern, array) {
   for (var i = 0; i < array.length; i++) {
     if (pattern.test(array[i])) console.log(array[i] + ": Valid");
