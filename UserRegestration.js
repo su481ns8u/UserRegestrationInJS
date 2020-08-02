@@ -6,7 +6,18 @@ var lastNamesArray = ["Ghinmine", "Ghi", "ghinmine", "Gh"];
 var lastNamePattern = /^[A-Z]{1}[a-z]{2,}/;
 validate(lastNamePattern, lastNamesArray);
 
-var emailsArray = ["abc.xyz@bl.co.in"];
+var emailsArray = [
+  "abc.xyz@bl.co.in",
+  "abc@yahoo.com",
+  "abc-100@yahoo.com",
+  "abc.100@yahoo.com",
+  "abc111@abc.com",
+  "abc-100@abc.net",
+  "abc.100@abc.com.in",
+  "abc@1.com",
+  "abc@gmail.com.com",
+  "abc+100@gmail.com",
+];
 var emailPattern = /^[0-9A-Za-z]+(([._+-]*)[0-9A-Za-z]+)*@[0-9A-Za-z]+.[a-z]{2,4}([.][a-z]{2,3})*$/;
 validate(emailPattern, emailsArray);
 
