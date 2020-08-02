@@ -10,6 +10,10 @@ var emailsArray = ["abc.xyz@bl.co.in"];
 var emailPattern = /^[0-9A-Za-z]+(([._+-]*)[0-9A-Za-z]+)*@[0-9A-Za-z]+.[a-z]{2,4}([.][a-z]{2,3})*$/;
 validate(emailPattern, emailsArray);
 
+var mobileArray = ["91 8551973494", "8551973494", "91 855197", "918551973494"];
+var mobilePattern = /^[1-9]+[0-9]+[\ ]+[1-9]+[0-9]{9}$/;
+validate(mobilePattern, mobileArray);
+
 function validate(pattern, array) {
   for (var i = 0; i < array.length; i++) {
     if (pattern.test(array[i])) console.log(array[i] + ": Valid");
